@@ -1,0 +1,118 @@
+@media screen and (max-width:1400px){
+    #profile{
+        height: 83vh;
+        margin:bottom
+    }
+    .about-containers{
+        flex: wrap;
+    }
+}
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display:flex;
+    }
+    #experience, .experience-details-container{
+        margin-top: 2rem;
+
+    }
+    #profile, .section-container{
+        display: block;
+    }
+    .arrow{
+        display: none;
+
+    }
+     section, .section-container{
+        height: fit-content;
+
+    }
+    section{
+        margin: 0 3%;
+    }
+    .section__pic-container{
+        width:250px;
+        height: 250px;
+        margin:0 auto 2rem;
+    }
+    .about-containers{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width:600px){
+    #contact, footer{
+        height:40vh;
+
+    }
+    #profile{
+        height:83vh;
+        margin-bottom: 0;
+
+    }
+    article{
+        font-size: 1rem;
+
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom:2rem;
+    }
+    .about-containers,
+    .about-info-upper-container,
+    .btn-container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin: 0;
+    }
+    .contact-info-container p, .nav-links li a{
+        font: 1rem;
+
+    }
+    .experience-sub-title{
+        font-size: 1.25rem;
+
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    
+
+}
+
+    
+
+/* General Styles for Mobile */
+@media (max-width: 768px) {
+    .text-container {
+        max-height: 100px; /* Limit the height of the text container */
+        overflow: hidden; /* Hide the overflow */
+        position: relative; /* Position relative for the "Read More" button */
+        text-align: center; /* Center align text */
+        margin-top: 2rem;
+    }
+
+    .text-container.expanded {
+        max-height: none; /* Remove height limit when expanded */
+        overflow: visible; /* Show the overflow */
+    }
+
+    .read-more {
+        display: block;
+        margin: 1rem auto 0;
+        color: blue;
+        cursor: pointer;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+}
