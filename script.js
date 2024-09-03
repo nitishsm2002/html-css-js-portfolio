@@ -16,3 +16,12 @@ function toggleReadMore() {
         readMoreBtn.textContent = 'Read Less';
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const detailsContainer = document.querySelector('.about-details-container .details-container p');
+
+    readMoreBtn.addEventListener('click', function() {
+        detailsContainer.classList.toggle('read-more');
+        readMoreBtn.textContent = detailsContainer.classList.contains('read-more') ? 'Read Less' : 'Read More';
+    });
+});

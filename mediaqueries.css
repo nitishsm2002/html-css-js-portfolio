@@ -116,3 +116,142 @@
         font-size: 1rem;
     }
 }
+@media (max-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .burger-menu.active {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .read-more-btn {
+        display: block;
+    }
+}
+/* Basic Styles for Desktop */
+.about-details-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.details-container {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.details-container .icon {
+    width: 50px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+.details-container h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.details-container p {
+    font-size: 1em;
+}
+
+/* Responsive Styles for Mobile View */
+@media (max-width: 768px) {
+    .about-details-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .details-container {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    .details-container .icon {
+        width: 40px; /* Adjust icon size for mobile */
+    }
+
+    .details-container h3 {
+        font-size: 1.2em;
+    }
+
+    .details-container p {
+        font-size: 0.9em;
+    }
+}
+@media (max-width: 1024px) {
+    #experience {
+        padding: 6rem;
+        margin-top: 4rem;
+    }
+
+    .experience-details-container {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .details-container {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        max-width: 90%;
+    }
+
+    .article-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        
+    }
+
+    article {
+        width: 150px; /* Adjust width for smaller screens */
+        
+    }
+
+    .arrow {
+        right: -2rem;
+        bottom: -1rem;
+        width: 30px; /* Adjust arrow size */
+    }
+}
+
+@media (max-width: 768px) {
+    #experience {
+        padding: 4rem;
+        margin-top: 3rem;
+    }
+
+    .experience-details-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-container {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+
+    .article-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2.5rem; /* Adjust gap for spacing between items */
+        justify-content: center; /* Center items horizontally */
+        align-items: flex-start; /* Align items to the start of the container */
+        width: 100%;
+        height: auto; /* Remove fixed height to allow content to dictate height */
+    }
+
+    article {
+        width: 100%; /* Full width for mobile */
+        padding: 0.5rem;
+    }
+
+    .arrow {
+        right: 0;
+        bottom: -1rem;
+        width: 25px; /* Adjust arrow size for mobile */
+    }
+}
