@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #e2ecf6;
 }
 
 html {
@@ -231,7 +232,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #0967C2 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -241,19 +242,21 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
-  color: white;
+  background: #0967C2;
+  color:#c6dff7;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: #0967C2;
 }
 
 .btn-color-2 {
-  background: none;
+    color: #0967C2;
+  background: white;
 }
 
 .btn-color-2:hover {
+    
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
@@ -268,6 +271,7 @@ section {
 }
 
 .about-containers {
+    
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -280,6 +284,7 @@ section {
 
 .about-containers,
 .about-details-container {
+    
   display: flex;
 }
 
@@ -296,9 +301,9 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: #DCE6F0;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: #08090b 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -321,13 +326,14 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
 .experience-details-container {
+    
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -364,8 +370,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: #070809;
+  background: #DCE6F0;
 }
 
 .project-img {
@@ -380,8 +386,10 @@ article .icon {
 }
 
 .project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
+    border: black 0.1rem solid;
+    background-color: #eaf3fb;
+  color: #0967C2;
+  border-color: black ;
 }
 
 /* CONTACT */
@@ -397,8 +405,8 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: #0967C2 0.1rem solid;
+  border-color: #DCE6F0;
   background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
