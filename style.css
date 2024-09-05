@@ -332,6 +332,10 @@ section {
   justify-content: center;
   flex-direction: column;
 }
+.experience-sub-title{
+    padding: rem;
+    text-align: center;
+}
 
 .article-container {
   display: flex;
