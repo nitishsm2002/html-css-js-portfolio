@@ -1,27 +1,7 @@
-function toggleMenu(){
-    const menu=document.querySelector(".menu-links");
-    const icon=document.querySelector(".hamburger-icon");
+function toggleMenu() {
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
     menu.classList.toggle("open");
     icon.classList.toggle("open");
-}
-function toggleReadMore() {
-    const textContainer = document.getElementById('textContainer');
-    const readMoreBtn = textContainer.querySelector('.read-more');
-    
-    if (textContainer.classList.contains('expanded')) {
-        textContainer.classList.remove('expanded');
-        readMoreBtn.textContent = 'Read More';
-    } else {
-        textContainer.classList.add('expanded');
-        readMoreBtn.textContent = 'Read Less';
-    }
-}
-document.addEventListener("DOMContentLoaded", function() {
-    const readMoreBtn = document.querySelector('.read-more-btn');
-    const detailsContainer = document.querySelector('.about-details-container .details-container p');
-
-    readMoreBtn.addEventListener('click', function() {
-        detailsContainer.classList.toggle('read-more');
-        readMoreBtn.textContent = detailsContainer.classList.contains('read-more') ? 'Read Less' : 'Read More';
-    });
-});
+  }
+  
