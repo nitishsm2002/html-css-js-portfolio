@@ -10,11 +10,13 @@
 body {
   
   font-family: "Poppins", sans-serif;
-  background-color: #e2ecf6;
+  background-color: #18106a;
+  position: relative;
 }
 
+
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 p {
@@ -29,38 +31,55 @@ a,
 }
 
 /* DESKTOP NAV */
-
+.title{
+  font-size: 190vh;
+  line-height: 80px;
+  
+}
 nav,
 .nav-links {
   display: flex;
-  background-color:rgb(102, 65, 250);
+  background-color:#185dfe;
+  
 
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: fit-content;
+  height:min-content;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   
 }
+
 
 .nav-links {
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
 }
-
-a {
-  color: black;
-  text-decoration: none;
-  text-decoration-color: white;
+nav .nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
-a:hover {
-  color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #051333; /* Change color on hover */
+}
+
+.logo{
+  color: white;
+}
+.logo:hover {
+  color: #051333; /* Change color on hover */
 }
 
 .logo {
@@ -187,7 +206,7 @@ section {
   height: 100%;
   object-fit: cover; /* Ensures the video covers the section fully */
   z-index: -1; /* Place the video behind the content */
-  opacity: 0.75; /* Adjust opacity to make the content visible */
+  opacity: 0.95; /* Adjust opacity to make the content visible */
 }
 
 /* Other sections */
@@ -208,12 +227,43 @@ section {
   font-weight: 600;
   color: #eaf3fb;
 }
+.section__text__p1 {
+  text-align: center;
+  color: white;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
 
 .title {
   font-size: 3rem;
   text-align: center;
   z-index: 1; /* Ensure the title is visible */
 }
+.title1{
+  font-size: 80px;
+  line-height: 90px;
+  font-weight:900;
+  margin-left: 30px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  background:url(assets/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
+}
+
+
+
+
+
 
 /* ICONS */
 .icon {
@@ -296,6 +346,7 @@ section {
 
 #about {
   position: relative;
+  
 }
 
 .about-containers {
@@ -329,13 +380,16 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: #DCE6F0;
+  background: #185dfe;
   border-radius: 2rem;
   border: #08090b 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: rgb(37, 67, 239);
   text-align: center;
 }
-
+.details-container p{
+  color: white;
+  
+}
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -398,8 +452,8 @@ article .icon {
 }
 
 .color-container {
-  border-color: #070809;
-  background: #DCE6F0;
+  border-color: #0b159d;
+  background: #0a3aea;
 }
 
 .project-img {
