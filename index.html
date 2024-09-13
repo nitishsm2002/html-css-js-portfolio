@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+  <audio id="backgroundAudio" autoplay loop>
+    <source src="assets/audio-file.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
     
     <nav id="desktop-nav">
         <div class="logo" href="#profile">Nitish SM</div>
@@ -17,7 +21,10 @@
                 <li><a href="#experience">Experience</a></li> 
                 <li><a href="#projects">Projects</a></li> 
                 <li><a href="#contact">Contact</a></li> 
+                <li><a href="#contact">Contact</a></li> 
+                <li><button id="audioControl">Play Audio</button></li>
             </ul>
+
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -39,7 +46,6 @@
     <section id="profile">
       <video autoplay muted loop id="profileVideo">
           <source src="./assets/profile.mp4" type="video/mp4">
-          
       </video>
       <div class="section__pic-container">
           <img src="./assets/profile-pic.png" alt="Nitish SM profile picture" />
@@ -51,6 +57,7 @@
           <div class="btn-container">
               <button class="btn btn-color-2" onClick="window.open('./assets/resume-example.pdf')">Resume</button>
               <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact</button>
+              
           </div>
           <div id="socials-container">
               <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onClick="location.href='https://www.linkedin.com/in/nitish-sm-74aa2926a'"/>
@@ -224,7 +231,7 @@
               class="project-img"
             />
           </div>
-          <h2 class="experience-sub-title project-title">Seri Sense</h2><p>A Comprehensive Disease Identification and recommendation system for sericulture using ML and image processing        </p>
+          <h2 class="experience-sub-title project-title">Seri Sense</h2><p>A Comprehensive Disease Identification and recommendation system for sericulture using ML and image processing</p>
           <div class="btn-container">
             <button
               class="btn btn-color-2 project-btn"

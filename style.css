@@ -48,7 +48,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height:min-content;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(26, 22, 233, 0.3);
   
 }
 
@@ -71,6 +71,7 @@ nav a {
   padding: 10px;
 }
 
+
 nav a:hover {
   color: #051333; /* Change color on hover */
 }
@@ -87,9 +88,19 @@ nav a:hover {
 }
 
 .logo:hover {
-  cursor: default;
+  cursor:pointer
 }
-
+#audioControl {
+  gap: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding: 10px
+  
+}
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -122,7 +133,7 @@ nav a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #DCE6F0;
+  background-color: #3548f5;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
