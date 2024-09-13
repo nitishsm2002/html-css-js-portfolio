@@ -1,6 +1,6 @@
 function toggleMenu() {
-  const menuLinks = document.querySelector('.menu-links');
-  menuLinks.classList.toggle('open');
+  const menu = document.querySelector('#hamburger-nav .menu-links');
+  menu.classList.toggle('open');
 }
 document.getElementById('audioControl').addEventListener('click', function() {
   var audio = document.getElementById('backgroundAudio');
