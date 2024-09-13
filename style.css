@@ -8,6 +8,7 @@
 }
 
 body {
+  
   font-family: "Poppins", sans-serif;
   background-color: #e2ecf6;
 }
@@ -32,12 +33,15 @@ a,
 nav,
 .nav-links {
   display: flex;
+  background-color:rgb(102, 65, 250);
+
 }
 
 nav {
   justify-content: space-around;
   align-items: center;
-  height: 17vh;
+  height: fit-content;
+  
 }
 
 .nav-links {
@@ -162,15 +166,31 @@ section {
   display: flex;
 }
 
-/* PROFILE SECTION */
-
+/* PROFILE SECTION - Background Video */
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 100vh; /* Ensure the section takes full height */
+  width: 100vw; /* Ensure the section takes full width */
+  overflow: hidden; /* Prevent overflow */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove padding */
 }
 
+#profileVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the section fully */
+  z-index: -1; /* Place the video behind the content */
+  opacity: 0.75; /* Adjust opacity to make the content visible */
+}
+
+/* Other sections */
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -181,26 +201,33 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  z-index: 1; /* Keep the text above the video */
 }
 
 .section__text p {
   font-weight: 600;
-}
-
-.section__text__p1 {
-  text-align: center;
-}
-
-.section__text__p2 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
+  color: #eaf3fb;
 }
 
 .title {
   font-size: 3rem;
   text-align: center;
+  z-index: 1; /* Ensure the title is visible */
 }
 
+/* ICONS */
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1; /* Ensure buttons are above the video */
+}
 #socials-container {
   display: flex;
   justify-content: center;
@@ -233,7 +260,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: #0967C2 0.1rem solid;
+  border: #000000 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -243,16 +270,16 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: #0967C2;
+  background: #000000;
   color:#c6dff7;
 }
 
 .btn-color-1:hover {
-  background: #0967C2;
+  background: #000000;
 }
 
 .btn-color-2 {
-    color: #0967C2;
+    color: #000000;
   background: white;
 }
 
