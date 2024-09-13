@@ -415,7 +415,6 @@ section {
 }
 
 .experience-details-container {
-    
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -423,6 +422,7 @@ section {
 .experience-sub-title{
     padding: rem;
     text-align: center;
+    color: #404042;
 }
 
 .article-container {
@@ -433,7 +433,9 @@ section {
   gap: 2.5rem;
   justify-content: space-around;
 }
-
+p{
+  color:rgb(185, 184, 184);
+}
 article {
   display: flex;
   width: 10rem;
@@ -469,8 +471,8 @@ article .icon {
 
 .project-btn {
     border: black 0.1rem solid;
-    background-color: #eaf3fb;
-  color: #0967C2;
+    background-color: #2273e6;
+  color: #000000;
   border-color: black ;
 }
 
@@ -489,7 +491,7 @@ article .icon {
   border-radius: 2rem;
   border: #0967C2 0.1rem solid;
   border-color: #9ecefd;
-  background: (250, 250, 250);
+  background: #0967C2 ;
   margin: 2rem auto;
   padding: 0.5rem;
 }
