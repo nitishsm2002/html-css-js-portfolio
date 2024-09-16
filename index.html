@@ -1,190 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
-  <audio autoplay loop id="backgroundAudio" >
-    <source src="assets/audio-file.mp3" type="audio/mp3">
-    Your browser does not support the audio element.
-  </audio>
-    
-    <nav id="desktop-nav">
-        <div class="logo" href="#profile">Nitish SM</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li> 
-                <li><a href="#experience">Experience</a></li> 
-                <li><a href="#projects">Projects</a></li> 
-                <li><a href="#contact">Contact</a></li> 
-                
-            </ul>
+  </head>
+  <body>
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <audio autoplay loop id="backgroundAudio">
+      <source src="assets/audio-file.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
 
-        </div>
+    <nav id="desktop-nav">
+      <div class="logo" href="#profile">Nitish SM</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Nitish SM</div>
-        <div class="hamburger-menu">
+      <div class="logo">Nitish SM</div>
+      <div class="hamburger-menu">
         <div class="hamburger-icon" onClick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div> 
-        <div class="menu-links">
-            <li><a href="#about" onClick="toggleMenu()">About</a></li> 
-            <li><a href="#experience" onClick="toggleMenu()">Experience</a></li> 
-            <li><a href="#projects" onClick="toggleMenu()">Projects</a></li> 
-            <li><a href="#contact" onClick="toggleMenu()">Contact</a></li> 
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        </div>  
+        <div class="menu-links">
+          <li><a href="#about" onClick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onClick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onClick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onClick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
       <video autoplay muted loop id="profileVideo">
-          <source src="./assets/profile.mp4" type="video/mp4">
+        <source src="./assets/profile.mp4" type="video/mp4" />
       </video>
       <div class="section__pic-container">
-          <img src="./assets/pic1.png" alt="Nitish SM profile picture" />
+        <img src="./assets/pic1.png" alt="Nitish SM profile picture" />
       </div>
       <div class="section__text">
-          <p class="section__text__p1">Hello, I'm</p>
-          <h1 class="title1">Nitish S M</h1>
-          <p class="section__text__p2">Frontend Developer</p>
-          <div class="btn-container">
-              <button class="btn btn-color-2" onClick="window.open('./assets/resume-example.pdf')">Resume</button>
-              <button class="btn btn-color-1" onClick="location.href='./#contact'">Contact</button>
-              
-          </div>
-          <div id="socials-container">
-              <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onClick="location.href='https://www.linkedin.com/in/nitish-sm-74aa2926a'"/>
-              <img src="./assets/github.png" alt="My GitHub profile" class="icon" onClick="location.href='https://github.com/nitishsm2002'"/>
-              <img src="./assets/x.png" alt="My Twitter profile" class="icon" onClick="location.href='https://x.com/ohayo0niichan'"/>
-          </div>
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title1">Nitish S M</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onClick="window.open('./assets/resume-example.pdf')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onClick="location.href='./#contact'">
+            Contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onClick="location.href='https://www.linkedin.com/in/nitish-sm-74aa2926a'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onClick="location.href='https://github.com/nitishsm2002'"
+          />
+          <img
+            src="./assets/x.png"
+            alt="My Twitter profile"
+            class="icon"
+            onClick="location.href='https://x.com/ohayo0niichan'"
+          />
+        </div>
       </div>
-  </section>
-  
+    </section>
 
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img
-              src="./assets/profile-pic.png"
-              alt="Profile picture"
-              class="about-pic"
-            />
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher<br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Bachelor of Engineering<br />In Computer Science and Engineering
+              </p>
+            </div>
           </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
+          <div class="text-container">
+            <p>
+              Enthusiastic Developer passionate about creating intuitive and
+              user-friendly web applications. With a strong foundation in HTML,
+              CSS, and JavaScript, I excel in crafting responsive and visually
+              appealing interfaces. I am proficient in Figma, enabling me to
+              design sleek UI/UX prototypes that translate seamlessly into code.
+              Additionally, I have hands-on experience with React, which allows
+              me to build dynamic and scalable web applications. I am eager to
+              contribute to a forward-thinking team, where I can further hone my
+              skills and grow professionally in the fast-paced tech industry.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <h2 class="experience-sub-title">Frontend Development</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
                 <img
-                  src="./assets/experience.png"
+                  src="./assets/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
-                <h3>Experience</h3>
-                <p> Fresher<br />Frontend Development</p>
-              </div>
-              <div class="details-container">
+                <div>
+                  <h3>HTML</h3>
+                  <p>Hands On</p>
+                </div>
+              </article>
+              <article>
                 <img
-                  src="./assets/education.png"
-                  alt="Education icon"
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
                   class="icon"
                 />
-                <h3>Education</h3>
-                <p>Bachelor of Engineering<br />In Computer Science and Engineering</p>
-              </div>
-            </div>
-            <div class="text-container">
-                <p>
-                    Enthusiastic Developer passionate about creating intuitive and user-friendly web applications. With a strong foundation in HTML, CSS, and JavaScript, I excel in crafting responsive and visually appealing interfaces. I am proficient in Figma, enabling me to design sleek UI/UX prototypes that translate seamlessly into code. Additionally, I have hands-on experience with React, which allows me to build dynamic and scalable web applications. I am eager to contribute to a forward-thinking team, where I can further hone my skills and grow professionally in the fast-paced tech industry.
-                  </p>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Hands On</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Hands On</p>
+                </div>
+              </article>
             </div>
           </div>
-        </div>
-        <img
-          src="./assets/arrow.png"
-          alt="Arrow icon"
-          class="icon arrow"
-          onclick="location.href='./#experience'"
-        />
-      </section>
-<section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Experience</h1>
-    <h2 class="experience-sub-title">Frontend Development</h2>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>HTML</h3>
-                <p>Hands On</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>CSS</h3>
-                <p>Hands On</p>
-              </div>
-            </article>
-            
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>JavaScript</h3>
-                <p>Hands On</p>
-              </div>
-            </article>
-            
-          </div>
-        </div>
-        <div class="details-container">
-          
-          <div class="article-container">
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>React JS</h3>
-                <p>Hands On</p>
-              </div>
-            </article>
-            <article>
-              <img
-                src="./assets/checkmark.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <div>
-                <h3>Tailwind</h3>
-                <p>Hands on</p>
-              </div>
-            </article>
-            <article>
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Hands On</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind</h3>
+                  <p>Hands on</p>
+                </div>
+              </article>
+              <article>
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -206,129 +295,162 @@
                   <p>Hands On</p>
                 </div>
               </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
-  <section id="projects">
-    <p class="section__text__p1">Browse My Recent</p>
-    <h1 class="title">Projects</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/seri.png"
-              alt="Project 1"
-              class="project-img"
-            />
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/seri.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Seri Sense</h2>
+            <p>
+              A Comprehensive Disease Identification and recommendation system
+              for sericulture using ML and image processing
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
-          <h2 class="experience-sub-title project-title">Seri Sense</h2><p>A Comprehensive Disease Identification and recommendation system for sericulture using ML and image processing</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/volleyball.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Volleyball Club</h2>
+            <p>
+              A web-based interface management system for scheduling games,
+              enhancing operational efficiency, for database management and
+              queries.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/volleyball.png"
-              alt="Project 2"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Volleyball Club </h2><p>A web-based interface management system for scheduling games, enhancing operational efficiency, for database management and queries.</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img
-              src="./assets/speedtracker.png"
-              alt="Project 3"
-              class="project-img"
-            />
-          </div>
-          <h2 class="experience-sub-title project-title">Speed Tracker</h2><p>Android project used to keep track on the speed of your vehicle using android studio.</p>
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Github
-            </button>
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/'"
-            >
-              Live Demo
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/speedtracker.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Speed Tracker</h2>
+            <p>
+              Android project used to keep track on the speed of your vehicle
+              using android studio.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#contact'"
-    />
-  </section>
-<section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img
-          src="./assets/email.png"
-          alt="Email icon"
-          class="icon contact-icon email-icon"
-        />
-        <p><a href="mailto:nitishdhavan7@gmail.com">@gmail.com</a></p>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nitishdhavan7@gmail.com">@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="http://linkedin.com/in/nitish-">LinkedIn</a></p>
+        </div>
       </div>
-      <div class="contact-info-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="LinkedIn icon"
-          class="icon contact-icon"
-        />
-        <p><a href="http://linkedin.com/in/nitish-">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    
-    <p>Copyright &#169; 2024 Nitish SM. All Rights Reserved.</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Nitish SM. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
