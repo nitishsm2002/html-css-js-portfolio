@@ -48,6 +48,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .profileVideo{
+    display: none;
+  }
   #contact,
   footer {
     height: 40vh;
@@ -100,5 +103,18 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+/* Show the video on devices with a width of 768px or larger */
+@media screen and (min-width: 768px) {
+  #profileVideo {
+    display: block;
+  }
+}
+
+/* Hide the video on devices with a width less than 768px */
+@media screen and (max-width: 767px) {
+  #profileVideo {
+    display: none;
   }
 }
